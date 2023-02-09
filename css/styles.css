@@ -710,10 +710,8 @@ ul {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--timing-function);
 
-  width: 95%;
-  max-width: 392px;
-  height: 95%;
-  max-height: 586px;
+  width: 91vw;
+  height: -140vw;
 
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -860,8 +858,9 @@ ul {
   color: #404bbf;
 }
 .modal-button {
-  width: 169px;
-  height: 56px;
+  width: 40%;
+  min-height: 56px;
+
   color: #ffffff;
   background-color: #4d5ae5;
   border: 0;
