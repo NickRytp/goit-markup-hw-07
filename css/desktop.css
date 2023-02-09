@@ -5,6 +5,17 @@
 
   /* --------------Bussiness-------------- */
 
+  .header > .container {
+    width: 1158px;
+  }
+  .header-logo {
+    margin-right: 76px;
+  }
+  .address-list {
+    display: flex;
+    padding-top: 0;
+    gap: 40px;
+  }
   .bussiness {
     padding-top: 187px;
     padding-bottom: 188px;

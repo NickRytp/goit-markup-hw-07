@@ -6,12 +6,29 @@
   }
 
   /* --------------Bussiness-------------- */
-
+  .menu-open {
+    display: none;
+  }
+  .header {
+    padding: 0;
+  }
+  .header > .container {
+    width: 768px;
+  }
+  .header-logo {
+    margin-right: 123px;
+  }
   .header-list {
     display: flex;
   }
   .address-list {
-    display: flex;
+    display: inline-block;
+    padding-top: 24px;
+  }
+  .address-anchor {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
   }
   .bussiness {
     padding-top: 111px;

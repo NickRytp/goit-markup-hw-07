@@ -113,7 +113,6 @@ ul {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-right: 76px;
 }
 .header-span {
   color: var(--title-color);
@@ -126,7 +125,7 @@ ul {
 }
 .header-link {
   position: relative;
-  padding: 27px 0;
+  padding: 24px 0 22px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -184,9 +183,6 @@ ul {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition: color var(--timing-function);
-}
-.address-list-item:not(:last-child) {
-  margin-right: 40px;
 }
 .address-anchor:hover,
 .address-anchor:focus {
