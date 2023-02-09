@@ -122,17 +122,6 @@ ul {
 .header-item:not(:last-child) {
   margin-right: 40px;
 }
-.header-link {
-  position: relative;
-  padding: 24px 0 23px 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-decoration: none;
-  transition: color var(--timing-function);
-}
 .header-link.current {
   color: #4d5ae5;
 }

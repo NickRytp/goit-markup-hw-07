@@ -22,9 +22,14 @@
   }
   .address-list {
     display: flex;
-    padding-top: 24;
+    padding-top: 24px;
     padding-bottom: 28px;
     gap: 40px;
+  }
+  .address-anchor {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   .bussiness {
     padding-top: 187px;

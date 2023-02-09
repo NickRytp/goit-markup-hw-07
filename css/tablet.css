@@ -20,9 +20,22 @@
   .header-list {
     display: flex;
   }
+  .header-link {
+    display: block;
+    position: relative;
+    padding: 24px 0 22px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-decoration: none;
+    transition: color var(--timing-function);
+  }
   .address-list {
     display: inline-block;
     padding-top: 24px;
+    padding-bottom: 8px;
   }
   .address-anchor {
     font-size: 12px;
