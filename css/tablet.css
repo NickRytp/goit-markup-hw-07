@@ -1,0 +1,73 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 582px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* --------------Bussiness-------------- */
+
+  .bussiness {
+    padding-top: 111px;
+    padding-bottom: 108px;
+  }
+  .bussiness-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 40px;
+  }
+
+  /* ----------------Offers---------------- */
+
+  .offers > .container {
+    width: 768px;
+  }
+  .offers-list {
+    text-align: start;
+    gap: 24px;
+  }
+  .offers-item {
+    width: 356px;
+  }
+
+  /* ------------------Team------------------ */
+
+  .team {
+    padding-bottom: 104px;
+  }
+  .team-list {
+    gap: 24px;
+    row-gap: 64px;
+  }
+
+  /* --------------Customers-------------- */
+
+  .customers-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .customers-item {
+    flex-basis: 168px;
+  }
+
+  /* -------------Footer------------- */
+
+  .footer {
+    text-align: start;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-info {
+    margin-right: 24px;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .footer-input {
+    width: 264px;
+    margin-right: 24px;
+    margin-bottom: auto;
+  }
+}

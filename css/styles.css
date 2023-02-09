@@ -14,6 +14,9 @@ body {
 }
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 p,
 h1,
@@ -46,7 +49,7 @@ ul {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.5;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -57,9 +60,9 @@ ul {
     box-shadow var(--timing-function);
 }
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 .visually-hidden {
@@ -194,11 +197,9 @@ ul {
 /* --------Effective solutions-------- */
 
 .bussiness {
-  height: 600px;
-  max-width: 1440px;
   margin: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-color: var(--background-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -210,12 +211,13 @@ ul {
   background-size: cover;
 }
 .bussiness-title {
-  font-size: 56px;
-  line-height: 1.07;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 .bussiness-btn {
   padding: 16px 32px;
@@ -237,77 +239,49 @@ ul {
 /* --------What we offer-------- */
 
 .offers {
-  padding-top: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .offers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  text-align: center;
 }
 .offers-item {
-  min-width: 264px;
 }
 .ofc {
-  width: 264px;
-  height: 112px;
-  background: #f4f4fd;
-  border-radius: 4px;
-  background-size: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: none;
 }
 .offers-icon {
   width: 64px;
   height: 64px;
 }
 .offers-title {
-  margin-top: 8px;
   margin-bottom: 8px;
+  font-size: 36px;
+  line-height: 1.11;
 }
 .offers-after-title {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  text-align: start;
 }
 
 /* --------What are we doing-------- */
 
 .job {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.job-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--title-color);
-  margin-bottom: 72px;
-}
-.job-list {
-  display: flex;
-  gap: 24px;
-}
-.job-item {
-  width: calc((100% - 48px) / 3);
-  background: linear-gradient(
-    0deg,
-    rgba(77, 90, 229, 0.1),
-    rgba(77, 90, 229, 0.1)
-  );
-  background-blend-mode: soft-light, normal;
-  border: 1px solid #e7e9fc;
+  display: none;
 }
 
 /* --------Our team-------- */
 
 .team {
-  padding-top: 120px;
-  padding-bottom: 110px;
+  padding-top: 96px;
+  padding-bottom: 128px;
   background: #f4f4fd;
-  margin: auto;
 }
 .team-title {
   font-size: 36px;
@@ -321,19 +295,19 @@ ul {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-}
-.container-team {
-  padding: 32px 0;
-  border: 0.5px solid #f4f4f4;
-  border-radius: 0px 0px 4px 4px;
+  gap: 72px;
+  justify-content: center;
 }
 .team-item {
-  width: calc((100% - 72px) / 4);
+  width: 264px;
+  height: auto;
   background: #ffffff;
   text-align: center;
   box-shadow: var(--box-shadow-team);
   border-radius: 0px 0px 4px 4px;
+}
+.container-team {
+  padding: 32px 0;
 }
 .team-item-title {
   margin-bottom: 8px;
@@ -376,8 +350,8 @@ ul {
 /* --------Customers--------- */
 
 .customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .customers-title {
   font-size: 36px;
@@ -391,15 +365,18 @@ ul {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 16px;
+  row-gap: 72px;
   justify-content: center;
 }
 .customers-item {
+  width: calc((100% - 16px) / 2);
+  height: 88px;
 }
 .customers-link {
   display: flex;
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   justify-content: center;
@@ -521,32 +498,24 @@ ul {
 
 .footer {
   background-color: var(--background-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
-  height: 310px;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  text-align: center;
 }
 .footer-container {
-  display: flex;
 }
 .footer-info {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-  margin-bottom: 16px;
 }
 .footer-span {
   color: #f4f4fd;
@@ -557,9 +526,13 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
+  text-align: start;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .footer-media {
-  margin-right: 80px;
+  margin-bottom: 72px;
 }
 .footer-after-title {
   font-size: 16px;
@@ -595,17 +568,16 @@ ul {
   fill: var(--primary-white-color);
 }
 .footer-form {
-  display: flex;
 }
 .footer-input {
-  width: 264px;
+  width: 100%;
   height: 40px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
-  margin-right: 24px;
+  margin-bottom: 16px;
   padding-left: 16px;
   color: #ffffff;
 }
