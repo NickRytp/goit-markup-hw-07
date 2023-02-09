@@ -205,7 +205,7 @@ ul {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/office-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -251,7 +251,7 @@ ul {
 .offers-item {
 }
 .ofc {
-display: none;
+  display: none;
 }
 .offers-icon {
   width: 64px;
@@ -400,20 +400,19 @@ display: none;
 /* --------PORTFOLIO-------- */
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .portfolio-list-btn {
-  margin-bottom: 72px;
+  margin-bottom: 48px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;
 }
 .portfolio-item-btn {
 }
 .portfolio-btn {
-  padding: 12px 24px;
+  padding: 8px 16px;
   color: #4d5ae5;
   background-color: #f4f4fd;
   border: 1px solid #e7e9fc;
@@ -430,12 +429,11 @@ display: none;
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
   row-gap: 48px;
   align-items: flex-start;
 }
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
   background: #ffffff;
 }
 .portfolio-overlay {
@@ -492,6 +490,8 @@ display: none;
   margin-bottom: 8px;
 }
 .portfolio-after-title {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* --------footer-------- */

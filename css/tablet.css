@@ -10,6 +10,11 @@
   .bussiness {
     padding-top: 111px;
     padding-bottom: 108px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-tablet.jpg);
   }
   .bussiness-title {
     font-size: 56px;
@@ -48,6 +53,30 @@
   }
   .customers-item {
     flex-basis: 168px;
+  }
+
+  /* --------------PORTFOLIO-------------- */
+
+  .portfolio > .container {
+    width: 768px;
+  }
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .portfolio-list-btn {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  .portfolio-btn {
+    padding: 12px 24px;
+  }
+  .portfolio-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
   }
 
   /* -------------Footer------------- */
