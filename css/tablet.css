@@ -9,11 +9,10 @@
   .menu-open {
     display: none;
   }
-  .header {
-    padding: 0;
-  }
   .header > .container {
     width: 768px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .header-logo {
     margin-right: 123px;

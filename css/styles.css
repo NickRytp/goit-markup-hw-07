@@ -82,8 +82,6 @@ ul {
   overflow: hidden;
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   background: #ffffff;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -95,7 +93,8 @@ ul {
 
 .header > .container {
   display: flex;
-  align-self: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-navigation {
   display: flex;
@@ -106,7 +105,7 @@ ul {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -125,7 +124,7 @@ ul {
 }
 .header-link {
   position: relative;
-  padding: 24px 0 22px 0;
+  padding: 24px 0 23px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
