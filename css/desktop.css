@@ -9,7 +9,12 @@
     width: 1158px;
   }
   .header-logo {
+    padding-top: 24px;
+    padding-bottom: 28px;
     margin-right: 76px;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
   }
   .header-link {
     padding-top: 24px;
