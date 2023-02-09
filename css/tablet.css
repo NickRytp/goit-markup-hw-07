@@ -7,6 +7,12 @@
 
   /* --------------Bussiness-------------- */
 
+  .header-list {
+    display: flex;
+  }
+  .address-list {
+    display: flex;
+  }
   .bussiness {
     padding-top: 111px;
     padding-bottom: 108px;

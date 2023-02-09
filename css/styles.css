@@ -12,6 +12,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
 }
+.no-scroll {
+  overflow: hidden;
+}
 img {
   display: block;
   width: 100%;
@@ -116,7 +119,7 @@ ul {
   color: var(--title-color);
 }
 .header-list {
-  display: flex;
+  display: none;
 }
 .header-item:not(:last-child) {
   margin-right: 40px;
@@ -171,12 +174,8 @@ ul {
 
 /* --------Contacts-------- */
 
-.contacts {
-  width: 14px;
-  height: 14px;
-}
 .address-list {
-  display: flex;
+  display: none;
 }
 .address-anchor {
   font-style: normal;
@@ -192,6 +191,113 @@ ul {
 .address-anchor:hover,
 .address-anchor:focus {
   color: #4d5ae5;
+}
+.menu-open {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+.menu-open-icon {
+  stroke: #2e2f42;
+  transition: stroke var(--timing-function);
+}
+.menu-open:hover .menu-open-icon {
+  stroke: #404bbf;
+}
+.menu-open:focus .menu-open-icon {
+  stroke: #404bbf;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 40px;
+}
+.menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.menu-close {
+  margin-left: auto;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu-close-icon {
+}
+.menu-list {
+  margin-top: 16px;
+  margin-bottom: 60px;
+}
+.menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+.menu-address-tel {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.01em;
+  color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.menu-address {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.menu-social-list {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  margin-top: 48px;
+}
+.menu-social-item {
+}
+.menu-social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color var(--timing-function);
+}
+.menu-social-icon {
+  width: 24px;
+  height: 24px;
+  margin: 8px;
+  fill: var(--primary-white-color);
+}
+.menu-social-link:hover,
+.menu-social-link:focus {
+  background-color: #404bbf;
+}
+
+.menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
 }
 
 /* --------Effective solutions-------- */
@@ -661,7 +767,7 @@ ul {
 }
 .close-btn {
   margin-left: auto;
-  display: block;
+  display: flex;
   width: 24px;
   height: 24px;
   border-radius: 50%;
