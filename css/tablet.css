@@ -58,7 +58,9 @@
   }
   .header-link:hover::after,
   .header-link:focus::after {
-    transform: scaleX(0);
+    background-color: #404bbfce;
+    transform: scaleX(1);
+    transition: transform var(--timing-function);
   }
   .address-list {
     display: inline-block;
